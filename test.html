@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>FORM<3</title>
+</head>
+<body>
+
+    <form>
+Name <input type="text" placeholder="Enter your beautiful name" id="Dia">
+<br><br>
+Section <input type="text" placeholder="Enter your section" id="Gah">
+<br><br>
+Age <input type="number" placeholder="Enter your age" id="Lol">
+<br><br>
+Your Birthday  <input type="text" placeholder="Enter you birthday" id="Shesh">
+<br><br>
+Favorite Color  <input type="text" placeholder="Enter a color" id="meme">
+<br><br>
+<button type="submit" onclick="One()">Submit</button>
+</form>
+<script>
+function One() {
+var x=document.getElementById("Dia").value
+var xx=document.getElementById("Gah").value
+var xxx=document.getElementById("Lol").value
+var xxxx=document.getElementById("Shesh").value
+var xxxxx=document.getElementById("meme").value
+var x2=localStorage.setItem("Name",x)
+var xx2=localStorage.setItem("Section",xx)
+var xxx2=localStorage.setItem("Age",xxx)
+var xxxx2=localStorage.setItem("Your Birthday",xxxx)
+var xxxxx2=localStorage.setItem("Favorite Color", xxxxx)
+}
+</script>
+</body>
+</html>
