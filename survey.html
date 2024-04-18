@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>SURVEY TIME!</title>
+</head>
+<body>
+    <h1><font color="3944BC">༶•┈┈୨Summer Survey୧┈┈•༶</font></h1>
+    <p class="description"><font color="48AAD">✧*̥˚Please take your time to answer the survey question*̥˚✧</font></p>
+
+    <form class="survey-form" onsubmit=" alert('THANK YOU SO MUCH!');return false;">
+        <div class="form-group">
+            <label class="name-label"><b><font color="0A1172">1. How do you typically stay cool during hot summer days?</b></label>
+            <input type="text" class="form-control" placeholder="Please Enter your answer" required
+            id="HowtoStayCool">
+        </div>
+       <br>
+      <br>
+       <div class="form-group">
+            <label class="activities-label"><b>2. What outdoor activities do you enjoy during the summer?</b></label>
+
+            <input type="text" class="form-control" placeholder="Please enter your answer" required
+            id="WhatActivities">
+        </div>
+        <br>
+        <br>
+        <div class="form-group">
+            <label class="activities2-label"><b>3. Do you prefer indoor or outdoor activities during hot weather?</b></b></label>
+            <br>
+            <input id="IndoororOutdoor" type="radio" value="Indoor" class="form-radio"><label for="indoor">Indoor</label>
+            <br>
+            <input id="IndoororOutdoor" type="radio" value="Outdoor" class="form-radio"><label for="outdoor">Outdoor</label>
+        </div>
+        <br>
+        <br>
+        <div class="form-group">
+            <label for="Favoriterefreshments" class="favorite-label" id="Favoriterefreshments" required ><b>4. What is your favorite refeshment?</b>
+            <br>
+
+                <input type="radio" id="Favoriterefreshments" value="Ice Tea">Ice Tea <br>
+                <input type="radio" id="Favoriterefreshments" value="Ice Cream">IceCream <br>
+                <input type="radio" id="Favoriterefreshments"  value="Shake">Shake <br>
+                <input type="radio" id="Favoriterefreshments" value="Popsicle">Popsicle <br> 
+                <input type="radio" id="Favoriterefreshments" value="Others0">Others <input type="text" placeholder="Please state here."> <br> 
+
+                <br>
+                <br>
+            <div class="form-group">
+                <label class="howoften-label"><b>5. How often do you visit swimming pools, beaches, or lakes during the summer?</b></label>
+                <br>
+                <input id="Howoften"  type="radio" value="Often" class="form-radio"><label for="Often">Often</label>
+                <br>
+                <input  id="Howoften" type="radio" value="SometimesOften" class="form-radio"><label for="SometimesOften">Sometimes</label>
+                <br>
+                <input  id="Howoften" type="radio" value="NotOften" class="form-radio"><label for="NotOften">Not Often</label>
+
+            </div>
+            <br>
+      <br>
+            <div class="form-group">
+                <label class="Doyouhavespecial-label"><b>6. Do you have any special summer traditions or rituals?</b></label>
+                <br>
+                <input id="Doyouhavespecial"  type="radio" value="Yes" class="form-radio"><label for="Yes">Yes</label>
+               
+        <br>
+        <input id="Doyouhavespecial"  type="radio" value="No" class="form-radio"><label for="No">No</label> <br>
+        </div>
+        <br>
+      <br>
+        <div class="form-group">
+            <label class="name-label"> <b>7. How do you protect yourself from the sun's heat and UV rays?</b></label>
+            <input type="text" class="form-control" placeholder="Please Enter your answer" required id="Howtoprotect">
+        </div>
+        <br>
+        <br>
+        <label for="Heatrelatedissues"><b>8. Have you ever experienced heat-related health issues during the summer?</b></label><br>
+        <input type=radio name="Heatrelatedissues" value="Yes" id="Heatrelatedissues"> Yes
+        <br>
+        <input type=radio name="Heatrelatedissues" value="No" id="Heatrelatedissues"> No 
+        <input type="text" class="form-control" placeholder="If yes, please enter your answer." id="Heatrelatedissues">
+
+        <br>
+        <br>
+        <label for="Doyouadjust"><b>9. Do you adjust your daily routine or habits to cope with extreme heat?</b></label><br>
+        <input type=radio name="Doyouadjust" value="Yes" id="Doyouadjust"> Yes 
+        <br>
+        <input type=radio name="Doyouadjust" value="No" id="Doyouadjust"> No <br>
+        <br>
+      <br>
+        <label for="StayingHydrated"><b>10. How do you stay hydrated during hot summer months?</b></label> <br>
+    <input type=radio name="StayingHydrated" value="Drinking Plenty of Water" id="StayingHydrated"> Drinking Plenty of Water
+   <br>
+    <input type=radio name="StayingHydrated" value="Drinking Plenty of Juice" id="StayingHydrated"> Drinking Plenty of Juice 
+    <br>
+    <input type=radio name="StayingHydrated" value="Dont do anything at all" id="StayingHydrated"> Not doing anything at all 
+    <br>
+    <input type="text"  class="form-control" placeholder="Others" id="StayingHydrated">
+      <br>
+
+
+      <div class="form-group">
+        <button type="submit" class="submit-button"  onclick="OK()">Submit</button>
+    </div>
+
+            
+
+        </div>
+
+    </form>
+   <script>
+    function OK(){
+        var a = document.getElementById("HowtoStayCool").value
+        var ab = document.getElementById("WhatActivities").value
+        var abc = document.getElementById("IndoororOutdoor").value
+        var abcd = document.getElementById("IndoororOutdoor").value
+        var abcde = document.getElementById("Favoriterefreshments").value
+        var abcdef = document.getElementById("Favoriterefreshments").value
+        var abcdefg = document.getElementById("Favoriterefreshments").value
+        var abcdefgh = document.getElementById("Favoriterefreshments").value
+        var abcdefghi = document.getElementById("Favoriterefreshments").value
+        var abcdefghij = document.getElementById("Howoften").value
+        var abcdefghijk = document.getElementById("Howoften").value
+        var abcdefghijkl = document.getElementById("Howoften").value
+        var abcdefghijklm = document.getElementById("Doyouhavespecial").value
+        var abcdefghijklmn = document.getElementById("Doyouhavespecial").value
+        var abcdefghijklmno = document.getElementById("Howtoprotect").value
+        var abcdefghijklmnop = document.getElementById("Heatrelatedissues").value
+        var abcdefghijklmnopq = document.getElementById("Heatrelatedissues").value
+        var abcdefghijklmnopqr = document.getElementById("Heatrelatedissues").value
+        var abcdefghijklmnopqrs = document.getElementById("Doyouadjust").value
+        var abcdefghijklmnopqrst = document.getElementById("Doyouadjust").value
+        var abcdefghijklmnopqrstu = document.getElementById("StayingHydrated").value
+        var abcdefghijklmnopqrstuv = document.getElementById("StayingHydrated").value
+        var abcdefghijklmnopqrstuvw = document.getElementById("StayingHydrated").value
+        var abcdefghijklmnopqrstuvwx = document.getElementById("StayingHydrated").value
+
+        var q = localStorage.setItem("HowtoStayCool", a )
+        var qw = localStorage.setItem("WhatActivities",ab )
+        var qwe = localStorage.setItem("IndoororOutdoor",abc )
+        var qwer = localStorage.setItem("IndoororOutdoor",abcd )
+        var qwert = localStorage.setItem("Favoriterefreshments",abcde  )
+        var qwerty = localStorage.setItem("Favoriterefreshments",abcdef )
+        var qwertyu = localStorage.setItem("Favoriterefreshments",abcdefg)
+        var qwertyui = localStorage.setItem("Favoriterefreshments",abcdefgh)
+        var qwertyuio = localStorage.setItem("Favoriterefreshments",abcdefghi)
+        var qwertyuiop = document.getElementById("Howoften", abcdefghij)
+        var qwertyuiopa = localStorage.setItem("Howoften",abcdefghijk )
+        var qwertyuiopas = localStorage.setItem("Howoften", abcdefghijkl)
+        var qwertyuiopasd = localStorage.setItem("Doyouhavespecial",abcdefghijklm)
+        var qwertyuiopasdf = localStorage.setItem("Doyouhavespecial",abcdefghijklmn)
+        var qwertyuiopasdfg = localStorage.setItem("Howtoprotect",abcdefghijklmno)
+        var qwertyuiopasdfgh = localStorage.setItem("Heatrelatedissues",abcdefghijklmnop)
+        var qwertyuiopasdfghj = localStorage.setItem("Heatrelatedissues",abcdefghijklmnopq)
+        var qwertyuiopasdfghjk = localStorage.setItem("Heatrelatedissues",abcdefghijklmnopqr)
+        var qwertyuiopasdfghjkl = localStorage.setItem("Doyouadjust",abcdefghijklmnopqrs)
+        var qwertyuiopasdfghjklz = localStorage.setItem("Doyouadjust",abcdefghijklmnopqrst)
+        var qwertyuiopasdfghjklzx = localStorage.setItem("StayingHydrated",abcdefghijklmnopqrstu)
+        var qwertyuiopasdfghjklzxc = localStorage.setItem("StayingHydrated",abcdefghijklmnopqrstuv)
+        var qwertyuiopasdfghjklzxc = localStorage.setItem("StayingHydrated",abcdefghijklmnopqrstuvw)
+        var qwertyuiopasdfghjklzxcv = localStorage.setItem("StayingHydrated",abcdefghijklmnopqrstuvw)
+    }
+</script>
+</body>
+</html>
